@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <nav class="menu">
+        <a href="minhapagina.html">minha pagina</a>
+        <a href="Sobre_min.html">sobre min</a>
+        <a href="Lista.html">lista</a>
+        <a href="Formulario.html">formulario</a>
+        <a href="ordem.html">ordem paranormal</a>
+        <a href="conversor_de_temp.html">conversor</a>
+    </nav>
+</head>
+<body>
+    <h1>Conversor de Temperatura</h1>
+    <input type="number" id="celsius" placeholder="Celsius">
+    <button onclick="converter()">Converter</button>
+    <p id="resultado"></p>
+    <script src="cerebro.js"></script>
+</body>
+</html> 
