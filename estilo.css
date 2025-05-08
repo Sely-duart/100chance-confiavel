@@ -1,5 +1,5 @@
 body {
-    background-color: #cabcce;
+    background-color: #cabbd3;
     font-family: monospace;
     color: #000000;
     text-align: center;
@@ -7,7 +7,7 @@ body {
 
 button {
     justify-items: center;
-    background-color: #634663;
+    background-color: #7457a3;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
@@ -22,12 +22,12 @@ button:hover {
 .menu {
     display: flex;
     justify-content: space-around;
-    background: #8976a5;
+    background: #795b92;
     padding: 15px;
 }
 
 .menu a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
