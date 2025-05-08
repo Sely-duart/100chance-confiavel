@@ -37,3 +37,16 @@ function converter() {
     const fahrenheit = (celsius * 9/5) + 32;
     document.getElementById("resultado").innerText = `${celsius}°C é igual a ${fahrenheit.toFixed(2)}°F.`;
 }
+
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio do formulário
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const mensagem = document.getElementById("mensagem").value;
+    
+    if (nome && email && mensagem) {
+        alert(`Nome: ${nome}\nEmail: ${email}\nMensagem: ${mensagem}`);
+    } else {
+        alert("Por favor, preencha todos os campos.");
+    }
+}); 
