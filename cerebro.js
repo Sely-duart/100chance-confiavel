@@ -50,3 +50,22 @@ document.getElementById("formulario").addEventListener("submit", function(event)
         alert("Por favor, preencha todos os campos.");
     }
 }); 
+
+function verificar() {
+    const resposta = document.querySelector('input[name="q1"]:checked');
+    const resultado = document.getElementById("resultado");
+
+    if (!resposta) {
+        resultado.innerText = "Por favor, selecione uma resposta.";
+        resultado.style.color = "red";
+        return;
+    }
+
+    if (resposta.value === "certo") {
+        resultado.innerText = "Correto!";
+        resultado.style.color = "green";
+    } else {
+        resultado.innerText = "Errado!";
+        resultado.style.color = "red";
+    }
+}
