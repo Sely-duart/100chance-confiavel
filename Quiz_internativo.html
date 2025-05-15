@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="estilo.css">
+    <nav class="menu">
+        <a href="minhapagina.html">minha pagina</a>
+        <a href="Sobre_min.html">sobre min</a>
+        <a href="Lista.html">lista</a>
+        <a href="Formulario.html">formulario</a>
+        <a href="ordem.html">ordem paranormal</a>
+        <a href="conversor_de_temp.html">conversor</a>
+        <a href="Quiz_interativo.html">Quiz</a>
+    </nav>
+</head>
+<body>
+    <h1>Quiz ordem paranormal</h1>
+    <div id="quiz-container">
+        <p id="resultado"></p>
+        <p>1. Qual elemento é voltado ao sentimento? </p>
+        <input type="radio" name="q1" value="errado" id="q1-a">
+        <label for="q1-a">O conhecimento</label><br>
+        <input type="radio" name="q1" value="certo" id="q1-b">
+        <label for="q1-b">O sangue</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-c">
+        <label for="q1-c">O medo</label><br>
+        <button onclick="verificar()">Verificar Resposta</button>
+       
+        <br>
+        <p>2. Qual foi o primeiro personagem, de jogador, a morrer?  </p>
+        <input type="radio" name="q1" value="certo" id="q1-a">
+        <label for="q1-a">Daniel Hartmann</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-b">
+        <label for="q1-b">Alexander Kothe</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-c">
+        <label for="q1-c">Thiago Fritz</label><br>
+        <button onclick="verificar()">Verificar Resposta</button>
+        <br>
+        <p>3. Qual o nome designado ao lider da ordem? </p>
+        <input type="radio" name="q1" value="certo" id="q1-a">
+        <label for="q1-a">Veríssimo</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-b">
+        <label for="q1-b">Liber</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-c">
+        <label for="q1-c">Mestre</label><br>
+        <button onclick="verificar()">Verificar Resposta</button>
+        <br>
+        <p>4. Qual elemento é opressor ao elemento da morte?</p>  
+        <input type="radio" name="q1" value="errado" id="q1-a">
+        <label for="q1-a">Nenhum</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-b">
+        <label for="q1-b">Sangue</label><br>
+        <input type="radio" name="q1" value="certo" id="q1-c">
+        <label for="q1-c">Energia</label><br>
+        <button onclick="verificar()">Verificar Resposta</button>
+        <br>
+        <p>5. Qual o nome do jogo do universo de O.P. </p>
+        <input type="radio" name="q1" value="errado" id="q1-a">
+        <label for="q1-a"> O segredo na floresta</label><br>
+        <input type="radio" name="q1" value="certo" id="q1-b">
+        <label for="q1-b"> Enigma do Medo</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-c">
+        <label for="q1-c"> Ordem Paranormal o jogo</label><br>
+        <button onclick="verificar()">Verificar Resposta</button>
+        <br>
+        <p>6. Qual nome do principal antagonista no universo de ordem? </p>
+        <input type="radio" name="q1" value="certo" id="q1-a">
+        <label for="q1-a">Kian</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-b">
+        <label for="q1-b">Joto</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-c">
+        <label for="q1-c">Diabo</label><br>
+        <button onclick="verificar()">Verificar Resposta</button>
+        <br>
+        <p>7. Qual classe é focada em fazer rituais  </p>
+        <input type="radio" name="q1" value="errado" id="q1-a">
+        <label for="q1-a">Especialista</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-b">
+        <label for="q1-b">Combatente</label><br>
+        <input type="radio" name="q1" value="certo" id="q1-c">
+        <label for="q1-c">Ocultista</label><br>
+        <button onclick="verificar()">Verificar Resposta</button>
+        <br>
+        <p>8. Qual foi a primeira reliquia a aparecer em O.P. </p>
+        <input type="radio" name="q1" value="errado" id="q1-a">
+        <label for="q1-a">Anfitrião</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-b">
+        <label for="q1-b">Magistrada</label><br>
+        <input type="radio" name="q1" value="certo" id="q1-c">
+        <label for="q1-c">Deus da morte</label><br>
+        <button onclick="verificar()">Verificar Resposta</button>
+        <br>
+        
+        <p>9. Qual a quantidades de elementos existentes atualmente em O.P. ? </p>
+        <input type="radio" name="q1" value="errado" id="q1-a">
+        <label for="q1-a">Oito</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-b">
+        <label for="q1-b">Quatro</label><br>
+        <input type="radio" name="q1" value="certo" id="q1-c">
+        <label for="q1-c">Cinco</label><br>
+        <button onclick="verificar()">Verificar Resposta</button>
+        <br>
+
+        <p>10. Como o Arthur Cervero morreu em O.P.? </p>
+        <input type="radio" name="q1" value="certo" id="q1-a">
+        <label for="q1-a">Ele esta vivo</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-b">
+        <label for="q1-b">Espancado pelo Kian</label><br>
+        <input type="radio" name="q1" value="errado" id="q1-c">
+        <label for="q1-c">Com uma espada no coração</label><br>
+        <button onclick="verificar()">Verificar Resposta</button>
+        <br>
+    </div>
+    <script src="cerebro.js"></script>
+</body>
+</html> 
